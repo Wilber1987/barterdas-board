@@ -27,6 +27,11 @@ jobs:
           python -m venv venv
           source venv/bin/activate
 
+      - name: Upgrade pip, setuptools, and wheel
+        run: |
+          source venv/bin/activate
+          pip install --upgrade pip setuptools wheel
+
       - name: Install Cython (dependency for building PyYAML)
         run: |
           source venv/bin/activate
