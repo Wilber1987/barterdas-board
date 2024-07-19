@@ -323,8 +323,8 @@ else:
 # endregion
 
 #DATABASECONECCTION
-DB_PASSWORD_DEV = "zaxscd"
-DB_NAME_DEV = "barter_local"
-DB_HOST_DEV = "localhost"
-DB_USER_DEV = "postgres"
+DB_PASSWORD_DEV = "Desarrollo2024%"
+DB_NAME_DEV = "postgres"
+DB_HOST_DEV = "bartercbd2024.postgres.database.azure.com"
+DB_USER_DEV = "barterc"
 DB_PORT = 5432

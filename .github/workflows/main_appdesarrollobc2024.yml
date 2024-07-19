@@ -26,14 +26,23 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
+
+      - name: Install Cython (dependency for building PyYAML)
+        run: |
+          source venv/bin/activate
+          pip install Cython
       
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          source venv/bin/activate
+          pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
       - name: Zip artifact for deployment
-        run: zip release.zip ./* -r
+        run: |
+          source venv/bin/activate
+          zip release.zip ./* -r
 
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v4
