@@ -1,0 +1,19 @@
+{% extends "./base.html" %}
+{% block content %}
+
+{% include "./elements/heading.html" with h=1 content='Tu contraseña se ha restablecido' only%}
+
+{% include "./elements/paragraph.html" with content='Estimado usuario, nos complace informarle de que su contraseña ha sido restablecida correctamente. Ahora puede acceder a su cuenta utilizando su nueva contraseña.' only %}
+{% include "./elements/paragraph.html" with content='Si no ha iniciado esta solicitud de restablecimiento de contraseña, póngase en contacto con nuestro equipo de atención al cliente inmediatamente para informar de cualquier acceso no autorizado a su cuenta.' only %}
+{% include "./elements/paragraph.html" with content='Gracias por elegir nuestra plataforma y no dude en ponerse en contacto con nosotros si necesita más ayuda.' only %}
+{% include "./elements/paragraph.html" with content='Saludos cordiales,' only %}
+{% include "./elements/paragraph.html" with content='El equipo de Barter Capital.' only %}
+
+{% include "./elements/line.html" %}
+
+{% include "./elements/paragraph.html" with content='Si no has iniciado esta solicitud de restablecimiento de contraseña, ponte en contacto inmediatamente con nuestro equipo de atención al cliente: '|add:contact_email only %}
+{% include "./elements/paragraph.html" with content='Nos tomamos muy en serio la seguridad de las cuentas de nuestros usuarios y agradecemos su colaboración para garantizar la seguridad de su información. Gracias por elegir nuestra plataforma.' only %}
+
+{% include "./elements/line.html" %}
+
+{% endblock  %}

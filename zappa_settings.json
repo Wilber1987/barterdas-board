@@ -1,0 +1,70 @@
+{
+  "dev": {
+    "django_settings": "bcapital.settings.dev",
+    "profile_name": "barter",
+    "project_name": "dashboard-api",
+    "runtime": "python3.9",
+    "s3_bucket": "dashboard-backend-apiv2",
+    "aws_region": "us-east-1",
+    "extra_permissions": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "s3:ListBucket",
+          "s3:GetObject",
+          "s3:PutObject"
+        ],
+        "Resource": [
+          "arn:aws:s3:::dashboard-backend-apiv2",
+          "arn:aws:s3:::dashboard-backend-apiv2/*"
+        ]
+      }
+    ]
+  },
+  "staging": {
+    "django_settings": "bcapital.settings.staging",
+    "profile_name": "barter",
+    "project_name": "dashboard-api-staging",
+    "runtime": "python3.9",
+    "s3_bucket": "dashboard-backend-apiv2-staging",
+    "aws_region": "us-east-1",
+    "extra_permissions": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "s3:ListBucket",
+          "s3:GetObject",
+          "s3:PutObject"
+        ],
+        "Resource": [
+          "arn:aws:s3:::dashboard-backend-apiv2-staging",
+          "arn:aws:s3:::dashboard-backend-apiv2-staging/*"
+        ]
+      }
+    ]
+  },
+  "prod": {
+    "django_settings": "bcapital.settings.prod",
+    "profile_name": "barter",
+    "project_name": "dashboard-api-prod",
+    "runtime": "python3.9",
+    "s3_bucket": "dashboard-backend-apiv2-prod",
+    "aws_region": "us-east-1",
+    "domain": "api.bartercapital-dashboard.com",
+    "certificate_arn": "arn:aws:acm:us-east-1:489076568171:certificate/d8f547c3-be87-47dc-b7b1-f3d3a112b36a",
+    "extra_permissions": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "s3:ListBucket",
+          "s3:GetObject",
+          "s3:PutObject"
+        ],
+        "Resource": [
+          "arn:aws:s3:::dashboard-backend-apiv2-prod",
+          "arn:aws:s3:::dashboard-backend-apiv2-prod/*"
+        ]
+      }
+    ]
+  }
+}

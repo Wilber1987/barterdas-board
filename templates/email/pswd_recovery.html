@@ -1,0 +1,20 @@
+{% extends "./base.html" %}
+{% block content %}
+
+{% include "./elements/heading.html" with h=1 content='Restablecer contraseña' only%}
+
+{% include "./elements/paragraph.html" with content='Estimado usuario, hemos recibido su solicitud para restablecer la contraseña de su cuenta con nosotros. Para garantizar la seguridad de su cuenta, le hemos enviado un código de seguridad a su dirección de correo electrónico con el que se ha registrado su cuenta de Barter Capital.' only %}
+
+{% include "./elements/button.html" with link=link_button content='Restablece tu contraseña' only %}
+
+{% include "./elements/paragraph.html" with content='Si el botón de restablecimiento no ha funcionado, da click a este link para iniciar el restablecimiento: '|add:link_button|add:' Gracias por dar este paso que garantizará el funcionamiento correcto de su cuenta con Barter Capital Group.' only %}
+
+{% include "./elements/line.html" %}
+
+{% include "./elements/paragraph.html" with content='Si no has iniciado esta solicitud de restablecimiento de contraseña, ponte en contacto inmediatamente con nuestro equipo de atención al cliente: '|add:contact_email only %}
+
+{% include "./elements/paragraph.html" with content='Nos tomamos muy en serio la seguridad de las cuentas de nuestros usuarios y agradecemos su colaboración para garantizar la seguridad de su información. Gracias por elegir nuestra plataforma.' only %}
+
+{% include "./elements/line.html" %}
+
+{% endblock  %}

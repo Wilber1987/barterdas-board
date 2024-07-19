@@ -1,0 +1,54 @@
+<mjml lang="es">
+    <mj-head>
+        <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" />
+        <mj-title>&#161;Bienvenido a Barter Capital&#33;</mj-title>
+        <mj-attributes>
+            <mj-text font-family="Montserrat"/>
+            <mj-all align="center" />
+        </mj-attributes>
+    </mj-head>
+
+    <mj-body>
+        <mj-section background-color="linear-gradient(#1A77B5 77%, #FFFFFF)" padding-top="0px">
+            <mj-column>
+                <mj-image src="https://d32m9psmi7z6jn.cloudfront.net/emails/sales_funnel/subscription_welcome/main-image.png" alt="apret&#243;n de manos"
+                        padding="0px"/>
+
+                <mj-text color="#fff"
+                        font-weight="700"
+                        font-size="30px"
+                        padding="40px 0px"
+                        text-transform="uppercase">
+                    &#161;Bienvenido a<br>Barter Capital&#33;
+                </mj-text>
+
+                <mj-text color="#fff"
+                        font-weight="400"
+                        font-size="20px">
+                    Comienza a descubrir las mejores oportunidades<br>
+                    para alcanzar tus metas desde tus inversiones<br>
+                    dentro del mercado digital.
+                </mj-text>
+
+                <mj-text color="#1A77B5"
+                        font-weight="500"
+                        font-size="25px"
+                        padding-top="40px">
+                    &#161;Tu momento es ahora&#33;
+                </mj-text>
+            </mj-column>
+        </mj-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-text font-size="20px">
+                    ¿Quieres saber m&aacute;s de nuestros planes de compensaci&oacute;n?
+                </mj-text>
+                <mj-text font-size="20px"
+                        font-weight="500">
+                    <a href="https://www.bartercapital-group.com/kit-plans" target="_blank">Clic aqu&iacute;<a/>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>

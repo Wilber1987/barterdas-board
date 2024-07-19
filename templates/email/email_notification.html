@@ -1,0 +1,19 @@
+{% extends "./base.html" %}
+{% block content %}
+
+{% include "./elements/heading.html" with h=1 content='Tu cuenta ha sido verificada' only%}
+
+{% include "./elements/paragraph.html" with content='Estimado usuario, nos complace informarle de que su cuenta de Barter Capital ha sido verificada. Esto significa que ahora puede acceder a todas las funciones y servicios de nuestra plataforma: Planes de inversión, Streaming, publicidad y Trading.' only %}
+{% include "./elements/paragraph.html" with content='Como usuario verificado, también podrá disfrutar de nuestros beneficios, nos tomamos muy enserio la seguridad de nuestros usuarios y su información. En Barter Capital queremos cumplir con todas las normas y regulaciones que garanticen a los clientes su satisfacción.' only %}
+{% include "./elements/paragraph.html" with content='Gracias por invertir en Barter Capital. Si tiene alguna pregunta o necesita más ayuda, no dude en ponerse en contacto con nuestro equipo de atención al cliente.' only %}
+{% include "./elements/paragraph.html" with content='Saludos cordiales,' only %}
+{% include "./elements/paragraph.html" with content='El equipo de Barter Capital.' only %}
+
+{% include "./elements/line.html" %}
+
+{% include "./elements/paragraph.html" with content='Si ha recibido un correo electrónico de Barter Capital Group, pero no se ha registrado o no lo reconoce, hacer caso omiso. No de clic a ningún enlace ni brinde información personal. Póngase en contacto con nosotros por correo: '|add:contact_email only %}
+{% include "./elements/paragraph.html" with content='Tambien puede contactar a soporte usando nuestra plataforma: '|add:support_link only %}
+
+{% include "./elements/line.html" %}
+
+{% endblock  %}

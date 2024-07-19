@@ -1,0 +1,18 @@
+{% extends "./base.html" %}
+{% block content %}
+
+{% include "./elements/heading.html" with h=1 content='Verifica tu cuenta' only%}
+
+{% include "./elements/paragraph.html" with content='Bienvenido a la familia Barter Capital Group. Estamos encantados de que te unas a nuestra familia y esperamos ayudarte a poder alcanzar tus objetivos financieros. Para activar tu cuenta y empezar a gozar de nuestros beneficios, verifica tu dirección de correo electrónico. Solo tiene que hacer clic en el enlace de verificación del correo electrónico que le enviamos.' only %}
+
+{% include "./elements/button.html" with link=link_button content='Verifica tu cuenta' only %}
+
+{% include "./elements/paragraph.html" with content='Si el botón de verificación de cuenta no ha funcionado, da click a este link para verificar tu cuenta: '|add:link_button|add:' Gracias por dar este paso que garantizará el funcionamiento correcto de su cuenta con Barter Capital Group.' only %}
+
+{% include "./elements/line.html" %}
+
+{% include "./elements/paragraph.html" with content='Si ha recibido un correo electrónico de Barter Capital Group, pero no se ha registrado o no lo reconoce, ignórelo, ya que nuestra prioridad es su seguridad, no de clic a ningún enlace ni brinde información personal. Póngase en contacto con nosotros: '|add:contact_email only %}
+
+{% include "./elements/line.html" %}
+
+{% endblock  %}
